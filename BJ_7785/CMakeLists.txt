@@ -11,12 +11,12 @@ endif ()
 
 project("BJ_7785")
 
-# 이 프로젝트의 실행 파일에 소스를 추가합니다.
-add_executable(BJ_7785 "main.cpp")
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)  # 지정한 버전을 반드시 지원해야 함
 set(CMAKE_CXX_EXTENSIONS OFF)        # 컴파일러 고유 확장 문법 사용 금지
+
+# 이 프로젝트의 실행 파일에 소스를 추가합니다.
+add_executable(BJ_7785 "main.cpp")
 
 if (MSVC)
     add_compile_options(
